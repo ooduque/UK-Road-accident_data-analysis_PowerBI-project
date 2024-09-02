@@ -1,7 +1,7 @@
-#STEPS TAKEN IN THE PROJECT
+# STEPS TAKEN IN THE PROJECT
 
 ## Requirement Gathering
-###REQUIREMENTS
+### REQUIREMENTS
 We want to create a road accident dashboard focused on year to have a better insight on the following:
 - Primary KPI - total casualties and total accidents values for current year and YoY (year-on-year) growth
 - Primary KPI - total casualties by accident severity for current year and YoY growth
