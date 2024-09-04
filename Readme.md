@@ -1,7 +1,7 @@
 # STEPS TAKEN IN THE PROJECT
 
 ## Requirement Gathering
-### REQUIREMENTS
+### Requirements
 We want to create a road accident dashboard focused on year to have a better insight on the following:
 - Primary KPI - total casualties and total accidents values for current year and YoY (year-on-year) growth
 - Primary KPI - total casualties by accident severity for current year and YoY growth
@@ -26,8 +26,6 @@ Stakeholders are basically the users of the dashboard and those that have been i
 ## Raw Data Overview
 Our datasource used for this project is an excel file which has 24 columns and xxx rows. The first thing to do is to check out our dataset and observe the data, by studying the data we can have an insight on what next to do. This is a rudiment in data analysis and cannot be put aside while building dashboard regardless on the tool of choice.
 
-
-
 ## Connecting Data with PowerBI
 Power BI gives us many options when it comes to datasource and Excel happens to be one of the default connectors. To import our dataset into Power BI, we click on the the Import data from Excel option since our dataset is in Excel format, and then click on Load.
 
@@ -36,7 +34,7 @@ This will load our data, it can take a little time to load the dataset.
 ## Data Cleaning
 After our dataset has been loaded, we clicked on the data view and check each of the columns to check for spelling mistakes, and other anomaly spelling mismatch, empty and null values.
 
-On checking the columns, we were able to find a spelling mistake in the Accident Severity column, we do have "Fatal" and "Fetal", obvious the "Fetal" was a mispelling of "Fatal" so we have to change all the rows of that column that has the value "Fetal" to "Fatal".
+On checking the columns, we were able to find a spelling mistake in the Accident Severity column, we do have **"Fatal"** and **"Fetal"**, obvious the "Fetal" was a misspelling of "Fatal", so we have to change all the rows of that column that has the value **"Fetal"** to **"Fatal"**.
 
 We changed that by going the Report view >> then click on Home>> then click on Transform data, this will load the Power Query editor.
 
@@ -57,9 +55,10 @@ Rename the new table with the following code:
 Calendar = CALENDAR(MIN(Data[Accident Date]),MAX(Data[Accident Date]))
 
 We want to extra the year and month from the date, so we create new columns by clicking on New Column and rename with the code below:
-
+```DAX
 Year = YEAR('Calendar'[Date])
 Month = FORMAT('Calendar'[Date],'mmm')
+```
 
 ## Data Modelling
 After creating a new table with it columns, we need to connect it to our first table that has our dataset, to do this we need to create a relationship between the two tables.
@@ -68,8 +67,10 @@ We click on the Data view, there we can see out two tables, and we link Accident
 
 Our requirements prompted us to create the Calendar table and we are not done yet, to actualise the first requirement, we will have to create a custom measure to determine the year to date. 
 To create a new measure, we shall right-click the Data table on the right pane and click on "New measure". We shall name our new measure CY (current year) Casualties. Below is the formular:
- CY Casualties = TOTALYTD(SUM(Data[Number_of_Casualties]),'Calendar'[Date])
 
+```DAX
+CY Casualties = TOTALYTD(SUM(Data[Number_of_Casualties]),'Calendar'[Date])
+```
 
 
 ## Background Design in Power Point
