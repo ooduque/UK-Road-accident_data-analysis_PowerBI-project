@@ -131,3 +131,7 @@ We can deduce the following from our analysis:
 In otherword, accidents and casualties happens more with a car on a dry single carriageway road in urban areas during the day time and fine weather. Even though there is a decline from 2021 to 2022, there is still a monthly upward trend noticed in the year 2022.
 
 [Click here](data-assets/road-accident-analysis_power_bi.pbix) to get the Power BI file of the dashboard.
+
+<video src='visual-data/demo-video.mp4' width=640 />
+
+Click to play the video of the demo
