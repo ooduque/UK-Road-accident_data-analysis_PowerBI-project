@@ -1,5 +1,13 @@
 # STEPS TAKEN IN THE PROJECT
 
+## Tools Used
+
+It is important to mention the tools that were used in completing the project and these are:
+
+- Excel
+- Power BI
+- PowerPoint
+
 ## Requirement Gathering
 
 ### Requirements
