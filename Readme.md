@@ -140,13 +140,9 @@ In other words, accidents and casualties happens more with a car on a dry single
 
 [Click here](data-assets/road-accident-analysis_power_bi.pbix) to get the Power BI file of the dashboard.
 
-<video src='visual-data/demo-video.mp4' width=640 />
-
-Click to play the video of the demo
+[Video Demo:Click to play the video of the demo](visual-data/demo-video.mp4)
 
 https://github.com/user-attachments/assets/50b097b8-c5f8-477f-b6c1-611d61b054f9
-
-
 
 https://github.com/user-attachments/assets/9e4e5fc4-06d9-47e2-9842-e5d1d1d323ab
 
