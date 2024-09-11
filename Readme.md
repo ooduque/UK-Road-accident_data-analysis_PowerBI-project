@@ -7,6 +7,7 @@ It is important to mention the tools that were used in completing the project, a
 - Excel
 - Power BI
 - PowerPoint
+- DAX
 
 ## Requirement Gathering
 
